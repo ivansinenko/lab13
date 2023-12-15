@@ -1,0 +1,225 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    background-color: #151418;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo a span {
+    color: #8739fa;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a{
+    list-style-type: none;
+    list-style: none;
+  }
+  nav li{
+    list-style-type: none;
+  }
+  a{
+    list-style: none;
+    list-style-type: none;
+  }
+  a.hover-underline-animation {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+  }
+  
+  a.hover-underline-animation:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffffff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a.hover-underline-animation:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .menu:hover a {
+    opacity: 0.4;
+  }
+  
+  .menu a:hover {
+    opacity: 1;
+    color: #fff;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  .menu img{
+    width: 40px;
+  }
+  #menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+  }
+.title{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.image{
+    width: 45%;
+}
+.image img{
+    width: 90%;
+    height: auto;
+}
+body{
+    background-color: #2e2e2e;
+    margin: 0;
+  }
+  
+  .footer {
+    background-color: #141414;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    width: 25%;
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  .footer-col h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+.text{
+    color: white;
+    font-size: 24px;
+    width: 45%;
+}
+
+  @media only screen and (max-width: 600px){
+  .icon {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  nav{
+    gap: 235px;
+  }
+  .about{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .text{
+    width: 100%;
+    font-size: 18px;
+  }
+  .image{
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+    background-color: #151418;
+    align-items: start;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  nav img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  li{
+    list-style: none ;
+  }
+  .menu a {
+    margin-left: 12px;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
